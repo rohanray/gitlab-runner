@@ -1,5 +1,5 @@
-FROM gitlab/gitlab-runner
-MAINTAINER tobilg <fb.tools.github@gmail.com>
+FROM gitlab/gitlab-runner:alpine
+MAINTAINER    Rohan Ray (https://github.com/rohanray) [rohanray@outlook.com]
 
 RUN apt-get update && apt-get install -y \
     curl \
