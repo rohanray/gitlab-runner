@@ -8,7 +8,7 @@ RUN apk add --update \
                 openssl \
                 wget
 
-ADD ./register-and-run.sh /
-RUN chmod +x ./register-and-run.sh
+COPY init.sh /
+RUN chmod +x /init.sh
 
 #ENTRYPOINT ["/register-and-run.sh"]
